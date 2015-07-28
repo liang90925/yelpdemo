@@ -1,0 +1,35 @@
+.jumbotron {
+	background-color: #fdf5d6;
+	h2 {
+		color: #c41200;
+		font-weight:bold;
+	}
+
+}
+
+.navbar-inverse {
+	.container-fluid {
+		.navbar-nav > li > a {
+			color: #ffffff;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.navbar-header {
+			.navbar-brand {
+				color: white;
+				font-family: Lobster, cursive;
+  				font-size: 35px;
+  				font-weight: bold;
+  				text-shadow: 2px 2px 2px #fff;
+			}
+		}
+		.btn-default {
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
+}
+
+.container-fluid {
+	padding: 10px 50px;
+}
