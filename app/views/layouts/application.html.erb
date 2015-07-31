@@ -11,7 +11,10 @@
 </head>
 <body>
 	<%= render 'layouts/navbar' %>  <!--erb== embedded ruby, using sign:<%= %> -->
-	<div class="container-fluid">
+	<% if current_page?(root_path) %>
+		<%= render 'layouts/topsection' %>
+	<% end %>
+	<div class="container-fluid application-section">
 		<% flash.each do |name, msg| %>
 			<% if msg.is_a?(String) %>
 				<div class="alert alert-<%= name == "notice" ? "success" : "danger" %> alert-dismissable">
